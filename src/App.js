@@ -7,11 +7,13 @@ import Login from './pages/Login';
 import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
 import Properties from './pages/Properties';
+import Header from './components/Header';
 
 function App() {
   return (
    <>
     <Router>
+      <Header></Header>
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/offers" element={<Offers />}></Route>
